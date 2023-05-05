@@ -4,24 +4,21 @@ public class Videogame {
     private Long id;
     private String name;
     private String poster;
-    private String description;
     private Integer achievements;
 
     public Videogame() {
     }
 
-    public Videogame(Long id, String name, String poster, String description, Integer achievements) {
+    public Videogame(Long id, String name, String poster, Integer achievements) {
         this.id = id;
         this.name = name;
         this.poster = poster;
-        this.description = description;
         this.achievements = achievements;
     }
 
     public Videogame(String name, String poster, String description, Integer achievements) {
         this.name = name;
         this.poster = poster;
-        this.description = description;
         this.achievements = achievements;
     }
 
@@ -49,14 +46,6 @@ public class Videogame {
         this.poster = poster;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public Integer getAchievements() {
         return achievements;
     }
@@ -71,7 +60,6 @@ public class Videogame {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", poster='" + poster + '\'' +
-                ", description='" + description + '\'' +
                 ", achievements=" + achievements +
                 '}';
     }

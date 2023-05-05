@@ -16,7 +16,6 @@ public class VideogameController {
                         1L,
                         "Don't Starve",
                         "Poster Link",
-                        "A game where you don't starve",
                         20
                 )
         );
